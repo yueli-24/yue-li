@@ -14,43 +14,39 @@
 }
 
 .greeting-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
   display: flex;
+  align-items: center;
 }
 
-.subTitle {
-  color: $subTitle !important;
+.greeting-text-div {
+  width: 50%;
 }
 
-.greeting-main {
-  display: flex;
+.greeting-image-div {
+  width: 50%;
+  text-align: center;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-
-.empty-div {
-  margin-bottom: 40px;
-}
-
-.button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
-.download-link-button {
-  text-decoration: none;
+.greeting-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: $textColor;
 }
 
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  color: $textColor;
 }
 
 .greeting-image-div > img {
@@ -109,14 +105,19 @@
   }
   .greeting-text-p {
     font-size: 16px;
-    line-height: normal;
     text-align: center;
   }
   .greeting-main {
     display: block;
   }
+  .greeting-text-div {
+    width: 100%;
+  }
   .greeting-image-div {
-    height: 256px;
+    width: 100%;
+  }
+  .greeting-image {
+    margin-top: 2rem;
   }
 }
 
@@ -124,4 +125,8 @@
   .main {
     width: auto;
   }
+}
+
+.dark-mode {
+  color: $textColorDark !important;
 }
