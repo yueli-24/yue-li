@@ -92,6 +92,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.xiaohongshu ? (
+        <a
+          href={socialMediaLinks.xiaohongshu}
+          className="icon-button xiaohongshu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-book"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.medium ? (
         <a
           href={socialMediaLinks.medium}

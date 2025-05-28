@@ -3,6 +3,7 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 .education-card:hover + .education-card-border {
@@ -32,12 +33,25 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
+  height: auto;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+
+  .school-link {
+    color: #8E1728;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8E1728;
+      text-decoration: underline;
+    }
+  }
 }
 
 .education-roundedimg {
@@ -60,22 +74,119 @@
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
+  &.dark-mode {
+    color: $textColorDark;
+  }
 }
 
-.education-text-duration {
-  color: $titleColor;
+.education-text-duration,
+.education-text-grade {
+  color: $textColor;
   font-size: 19px;
   margin: 0px;
   padding-top: 0.5rem;
+  &.dark-mode {
+    color: $textColorDark;
+  }
 }
 
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: $textColor;
+  &.dark-mode {
+    color: $textColorDark;
+  }
 }
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+  list-style-type: none;
+  padding-left: 0;
+  color: $textColor;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.education-bullet-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: $textColor;
+  margin: 1rem 0 0.5rem 0;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+}
+
+.education-bullet-item {
+  color: $textColor;
+  margin: 0.3rem 0 0.3rem 1rem;
+  position: relative;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+  &::before {
+    content: "•";
+    position: absolute;
+    left: -1rem;
+    color: $textColor;
+    .dark-mode & {
+      color: $textColorDark;
+    }
+  }
+  strong {
+    font-weight: 600;
+    color: $textColor;
+    &.dark-mode {
+      color: $textColorDark;
+    }
+  }
+}
+
+.education-bullet-subitem {
+  color: $textColor;
+  margin: 0.3rem 0 0.3rem 2rem;
+  position: relative;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+  &::before {
+    content: "◦";
+    position: absolute;
+    left: -1.5rem;
+    color: $textColor;
+    .dark-mode & {
+      color: $textColorDark;
+    }
+  }
+  strong {
+    font-weight: 600;
+    color: $textColor;
+    &.dark-mode {
+      color: $textColorDark;
+    }
+  }
+}
+
+.education-bullet-space {
+  height: 1rem;
+  list-style: none;
+}
+
+.education-bullet-text {
+  color: $textColor;
+  margin: 0.3rem 0;
+  &.dark-mode {
+    color: $textColorDark;
+  }
+  strong {
+    font-weight: 600;
+    color: $textColor;
+    &.dark-mode {
+      color: $textColorDark;
+    }
+  }
 }
 
 /* Media Query */
@@ -93,14 +204,16 @@
   }
   .education-text-subHeader {
     padding-top: 0.5rem;
-    font-size: 16px;
+    font-size: 20px;
   }
   .education-text-school {
-    font-size: 20px;
-    height: 23px;
+    font-size: 24px;
+    height: auto;
+    line-height: 1.2;
   }
-  .education-text-duration {
-    font-size: 16px;
+  .education-text-duration,
+  .education-text-grade {
+    font-size: 18px;
   }
   .education-roundedimg {
     width: 4rem;
@@ -130,5 +243,26 @@
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+  }
+  .education-text-school {
+    font-size: 22px;
+    height: auto;
+    line-height: 1.2;
+  }
+  .education-text-subHeader {
+    font-size: 18px;
+  }
+  .education-text-duration,
+  .education-text-grade {
+    font-size: 16px;
+  }
+  .education-bullet-title {
+    font-size: 20px;
+  }
+  .education-bullet-item {
+    font-size: 16px;
+  }
+  .education-bullet-subitem {
+    font-size: 14px;
   }
 }

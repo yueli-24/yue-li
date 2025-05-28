@@ -3,12 +3,12 @@ Certain colors are used for different and multiply types of elements.
 For greater control over colors visit each components .scss file. */
 
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
+$buttonColor: #f15483;
+$buttonHover: #f2a1c7;
 $topButtonHover: #000;
 
 // text colors light theme
-$titleColor: #000000;
+$titleColor: #f15483;
 $textColor: #000000;
 $subTitle: #868e96;
 $cardSubtitle: #666666;
@@ -36,7 +36,7 @@ $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: #010101;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -74,7 +74,7 @@ $iconBackground: #333;
 $appHeaderBG: #282c34;
 
 // misc colors
-$skillsColor: #645beb;
+$skillsColor: #940242;
 $appLink: #09d3ac;
 
 // social media icons
@@ -88,3 +88,5 @@ $medium: #000;
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;
+$xiaohongshu: #ff2442;
+$logoNameColor: #f15483;
