@@ -1,15 +1,17 @@
 @import "../../_globalColor";
 
-.footer-text {
+.footer-div {
+  margin-top: 2rem;
   text-align: center;
-  color: $subTitle !important;
+}
+
+.footer-text {
+  color: $textColor;
+  font-size: 14px;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .dark-mode {
-  color: $textColorDark !important;
-}
-
-.footer-div {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+  color: $textColorDark;
 }
